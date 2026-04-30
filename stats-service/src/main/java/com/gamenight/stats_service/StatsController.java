@@ -24,12 +24,12 @@ public class StatsController {
     @CircuitBreaker(name = "playerService", fallbackMethod = "fallbackStats")
     @Retry(name = "playerService")
     public ResponseEntity<PartyStats> getStats(@PathVariable Long partyId) {
-        // 1. R\u00e9cup\u00e9rer les infos de la party (via Eureka : nom logique du service)
+        // 1. Recuperer la party
         PartyDto party = restTemplate.getForObject(
                 "http://party-service/parties/" + partyId,
                 PartyDto.class);
 
-        // 2. R\u00e9cup\u00e9rer la liste des joueurs
+        // 2. Recuperer les joueurs (c est ici que ca peut planter)
         List<Map<String, Object>> players = restTemplate.getForObject(
                 "http://player-service/players/party/" + partyId,
                 List.class);
@@ -41,11 +41,13 @@ public class StatsController {
         return ResponseEntity.ok(new PartyStats(partyName, gameType, playersCount));
     }
 
-    // Fallback : appel\u00e9 si playerService est indisponible
+    // Fallback : doit avoir EXACTEMENT les memes parametres + Throwable a la fin
     public ResponseEntity<PartyStats> fallbackStats(Long partyId, Throwable t) {
-        // Essayer de r\u00e9cup\u00e9rer la party quand m\u00eame
+        System.err.println("FALLBACK declenche pour partyId=" + partyId + " : " + t.getMessage());
+
         String partyName = "Unknown";
         String gameType = "Unknown";
+
         try {
             PartyDto party = restTemplate.getForObject(
                     "http://party-service/parties/" + partyId,
@@ -54,7 +56,9 @@ public class StatsController {
                 partyName = party.getName();
                 gameType = party.getGameType();
             }
-        } catch (Exception ignored) {}
+        } catch (Exception e) {
+            System.err.println("Party aussi indisponible : " + e.getMessage());
+        }
 
         return ResponseEntity.ok(new PartyStats(partyName, gameType, -1));
     }
