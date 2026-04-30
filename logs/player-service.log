@@ -1,0 +1,66 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.14)
+
+2026-04-30T16:23:15.221+02:00  INFO 39570 --- [player-service] [           main] c.g.p.PlayerServiceApplication           : Starting PlayerServiceApplication v0.0.1-SNAPSHOT using Java 17.0.17 with PID 39570 (/Users/mareschal/IdeaProjects/GameNight/player-service/target/player-service-0.0.1-SNAPSHOT.jar started by mareschal in /Users/mareschal/IdeaProjects/GameNight/player-service)
+2026-04-30T16:23:15.223+02:00  INFO 39570 --- [player-service] [           main] c.g.p.PlayerServiceApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-04-30T16:23:15.817+02:00  INFO 39570 --- [player-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-30T16:23:15.912+02:00  INFO 39570 --- [player-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 1 JPA repository interface.
+2026-04-30T16:23:16.039+02:00  INFO 39570 --- [player-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=28bc6db2-577b-3e35-9916-e860cffe7ecd
+2026-04-30T16:23:16.243+02:00  INFO 39570 --- [player-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2026-04-30T16:23:16.258+02:00  INFO 39570 --- [player-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-30T16:23:16.258+02:00  INFO 39570 --- [player-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-04-30T16:23:16.292+02:00  INFO 39570 --- [player-service] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-30T16:23:16.293+02:00  INFO 39570 --- [player-service] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1036 ms
+2026-04-30T16:23:16.508+02:00  INFO 39570 --- [player-service] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-30T16:23:16.571+02:00  INFO 39570 --- [player-service] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-04-30T16:23:16.588+02:00  INFO 39570 --- [player-service] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-30T16:23:16.703+02:00  INFO 39570 --- [player-service] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-30T16:23:16.715+02:00  INFO 39570 --- [player-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-30T16:23:16.807+02:00  INFO 39570 --- [player-service] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:playerdb user=SA
+2026-04-30T16:23:16.808+02:00  INFO 39570 --- [player-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-30T16:23:16.832+02:00  INFO 39570 --- [player-service] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-30T16:23:17.139+02:00  INFO 39570 --- [player-service] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-30T16:23:17.170+02:00  INFO 39570 --- [player-service] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-30T16:23:17.287+02:00  WARN 39570 --- [player-service] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-30T16:23:17.543+02:00  INFO 39570 --- [player-service] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:playerdb'
+2026-04-30T16:23:17.557+02:00  INFO 39570 --- [player-service] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-04-30T16:23:17.570+02:00  WARN 39570 --- [player-service] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-04-30T16:23:17.572+02:00  INFO 39570 --- [player-service] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2026-04-30T16:23:17.594+02:00  INFO 39570 --- [player-service] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-04-30T16:23:17.605+02:00  INFO 39570 --- [player-service] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-04-30T16:23:17.607+02:00  INFO 39570 --- [player-service] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-30T16:23:17.611+02:00  INFO 39570 --- [player-service] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-04-30T16:23:17.611+02:00  INFO 39570 --- [player-service] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-04-30T16:23:17.611+02:00  INFO 39570 --- [player-service] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-04-30T16:23:17.611+02:00  INFO 39570 --- [player-service] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-04-30T16:23:17.611+02:00  INFO 39570 --- [player-service] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-04-30T16:23:17.611+02:00  INFO 39570 --- [player-service] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-04-30T16:23:17.611+02:00  INFO 39570 --- [player-service] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-04-30T16:23:17.795+02:00  INFO 39570 --- [player-service] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-04-30T16:23:17.796+02:00  INFO 39570 --- [player-service] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-04-30T16:23:17.797+02:00  INFO 39570 --- [player-service] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-04-30T16:23:17.798+02:00  INFO 39570 --- [player-service] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1777558997797 with initial instances count: 3
+2026-04-30T16:23:17.799+02:00  INFO 39570 --- [player-service] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PLAYER-SERVICE with eureka with status UP
+2026-04-30T16:23:17.799+02:00  INFO 39570 --- [player-service] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1777558997799, current=UP, previous=STARTING]
+2026-04-30T16:23:17.800+02:00  INFO 39570 --- [player-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PLAYER-SERVICE/10.154.107.51:player-service:8083: registering service...
+2026-04-30T16:23:17.806+02:00  INFO 39570 --- [player-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2026-04-30T16:23:17.806+02:00  INFO 39570 --- [player-service] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-04-30T16:23:17.818+02:00  INFO 39570 --- [player-service] [           main] c.g.p.PlayerServiceApplication           : Started PlayerServiceApplication in 2.868 seconds (process running for 3.088)
+2026-04-30T16:23:17.821+02:00  INFO 39570 --- [player-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PLAYER-SERVICE/10.154.107.51:player-service:8083 - registration status: 204
+2026-04-30T16:23:18.235+02:00  INFO 39570 --- [player-service] [nio-8083-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-30T16:23:18.235+02:00  INFO 39570 --- [player-service] [nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-30T16:23:18.236+02:00  INFO 39570 --- [player-service] [nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

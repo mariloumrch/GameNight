@@ -1,0 +1,54 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.14)
+
+2026-04-30T16:22:34.101+02:00  INFO 39091 --- [stats-service] [           main] c.g.s.StatsServiceApplication            : Starting StatsServiceApplication v0.0.1-SNAPSHOT using Java 17.0.17 with PID 39091 (/Users/mareschal/IdeaProjects/GameNight/stats-service/target/stats-service-0.0.1-SNAPSHOT.jar started by mareschal in /Users/mareschal/IdeaProjects/GameNight/stats-service)
+2026-04-30T16:22:34.105+02:00  INFO 39091 --- [stats-service] [           main] c.g.s.StatsServiceApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-04-30T16:22:35.085+02:00  INFO 39091 --- [stats-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f4f50d42-91a5-3465-9473-03c96daf8dda
+2026-04-30T16:22:35.855+02:00  INFO 39091 --- [stats-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2026-04-30T16:22:35.875+02:00  INFO 39091 --- [stats-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-30T16:22:35.875+02:00  INFO 39091 --- [stats-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-04-30T16:22:35.920+02:00  INFO 39091 --- [stats-service] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-30T16:22:35.921+02:00  INFO 39091 --- [stats-service] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1741 ms
+2026-04-30T16:22:37.650+02:00  INFO 39091 --- [stats-service] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-04-30T16:22:37.709+02:00  WARN 39091 --- [stats-service] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-04-30T16:22:37.717+02:00  INFO 39091 --- [stats-service] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 5 endpoints beneath base path '/actuator'
+2026-04-30T16:22:37.766+02:00  INFO 39091 --- [stats-service] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-04-30T16:22:37.789+02:00  INFO 39091 --- [stats-service] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-04-30T16:22:37.794+02:00  INFO 39091 --- [stats-service] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-30T16:22:37.801+02:00  INFO 39091 --- [stats-service] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-04-30T16:22:37.801+02:00  INFO 39091 --- [stats-service] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-04-30T16:22:37.801+02:00  INFO 39091 --- [stats-service] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-04-30T16:22:37.801+02:00  INFO 39091 --- [stats-service] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-04-30T16:22:37.801+02:00  INFO 39091 --- [stats-service] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-04-30T16:22:37.801+02:00  INFO 39091 --- [stats-service] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-04-30T16:22:37.801+02:00  INFO 39091 --- [stats-service] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-04-30T16:22:38.225+02:00  INFO 39091 --- [stats-service] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-04-30T16:22:38.226+02:00  INFO 39091 --- [stats-service] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-04-30T16:22:38.228+02:00  INFO 39091 --- [stats-service] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-04-30T16:22:38.230+02:00  INFO 39091 --- [stats-service] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1777558958230 with initial instances count: 0
+2026-04-30T16:22:38.240+02:00  INFO 39091 --- [stats-service] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application STATS-SERVICE with eureka with status UP
+2026-04-30T16:22:38.240+02:00  INFO 39091 --- [stats-service] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1777558958240, current=UP, previous=STARTING]
+2026-04-30T16:22:38.241+02:00  INFO 39091 --- [stats-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STATS-SERVICE/10.154.107.51:stats-service:8084: registering service...
+2026-04-30T16:22:38.252+02:00  INFO 39091 --- [stats-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path '/'
+2026-04-30T16:22:38.253+02:00  INFO 39091 --- [stats-service] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8084
+2026-04-30T16:22:38.278+02:00  INFO 39091 --- [stats-service] [           main] c.g.s.StatsServiceApplication            : Started StatsServiceApplication in 4.565 seconds (process running for 4.943)
+2026-04-30T16:22:38.357+02:00  INFO 39091 --- [stats-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STATS-SERVICE/10.154.107.51:stats-service:8084 - registration status: 204
+2026-04-30T16:23:03.657+02:00  INFO 39091 --- [stats-service] [nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-30T16:23:03.659+02:00  INFO 39091 --- [stats-service] [nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-30T16:23:03.662+02:00  INFO 39091 --- [stats-service] [nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-04-30T16:23:08.229+02:00  INFO 39091 --- [stats-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-04-30T16:23:08.231+02:00  INFO 39091 --- [stats-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-04-30T16:23:08.231+02:00  INFO 39091 --- [stats-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-04-30T16:23:08.231+02:00  INFO 39091 --- [stats-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-04-30T16:23:08.231+02:00  INFO 39091 --- [stats-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-04-30T16:23:08.231+02:00  INFO 39091 --- [stats-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-04-30T16:23:08.231+02:00  INFO 39091 --- [stats-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-04-30T16:23:08.276+02:00  INFO 39091 --- [stats-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+FALLBACK declenche pour partyId=1 : I/O error on GET request for "http://player-service/players/party/1": Connection refused
